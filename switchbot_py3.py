@@ -97,6 +97,8 @@ def main():
     else:
         raise RuntimeError('Please specify at least one mode between --scan and --device')
 
+    print(bt_addr)
+    print(opts.interface)
     driver = Driver(device=bt_addr, bt_interface=opts.interface, timeout_secs=opts.connect_timeout)
     driver.connect()
     print('Connected!')
