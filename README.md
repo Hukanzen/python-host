@@ -60,6 +60,7 @@ To install the required dependencies on Ubuntu/Debian/Raspbian:
 
 ```shell
 apt-get install python3-pip
+apt-get install python-dev libbluetooth3-dev
 pip3 install pybluez
 apt-get install libboost-python-dev
 apt-get install libboost-thread-dev
