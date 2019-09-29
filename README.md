@@ -60,7 +60,7 @@ To install the required dependencies on Ubuntu/Debian/Raspbian:
 
 ```shell
 apt-get install python3-pip
-apt-get install python-dev libbluetooth3-dev
+apt-get install python-dev libbluetooth3-dev bluetooth
 pip3 install pybluez
 apt-get install libboost-python-dev
 apt-get install libboost-thread-dev
@@ -73,7 +73,8 @@ If for some reason the gattlib installation fails:
 pip3 download gattlib
 tar xvzf ./gattlib-0.20150805.tar.gz
 cd gattlib-0.20150805/
-sed -ie 's/boost_python-py34/boost_python-py35/' setup.py
+sed -ie 's/boost_python-py34/boost_python-py37/' setup.py
+apt-get install libglib2.0-dev
 pip3 install .
 ```
 
